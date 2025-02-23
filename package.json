@@ -1,0 +1,39 @@
+{
+  "name": "prompt-for-ai",
+  "version": "1.0.0",
+  "description": "Interactive industrial generator prompts for analysis of the structure of the project and the contents of the files.",
+  "main": "extension.js",
+  "bin": {
+    "create-prompt": "extension.js"
+  },
+  "keywords": [
+    "cli",
+    "prompt",
+    "project",
+    "file-structure",
+    "interactive",
+    "nodejs",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merzfst/text-for-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/merzfst/text-for-ai/issues"
+  },
+  "preferGlobal": true,
+  "homepage": "https://www.npmjs.com/package/text-for-ai",
+  "files": [
+    "extention.js",
+    "lang.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "merzfst",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2"
+  }
+}
