@@ -1,6 +1,6 @@
-# Text For AI
+# Prompt For AI
 
-Text For AI is an interactive CLI tool that scans a project folder, displays its file structure, and lets you select files to generate a prompt for further processing.
+Prompt For AI is an interactive CLI tool that scans a project folder, displays its file structure, and lets you select files to generate a prompt for further processing.
 
 ## Features
 
@@ -11,10 +11,10 @@ Text For AI is an interactive CLI tool that scans a project folder, displays its
 
 ## Installation
 
-Install Text For AI globally using npm:
+Install Prompt For AI globally using npm:
 
 ```bash
-npm install -g text-for-ai
+npm install -g prompt-for-ai
 ```
 
 ## Usage
