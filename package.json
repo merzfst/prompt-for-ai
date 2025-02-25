@@ -1,6 +1,6 @@
 {
   "name": "prompt-for-ai",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Interactive industrial generator prompts for analysis of the structure of the project and the contents of the files.",
   "main": "extension.js",
   "bin": {

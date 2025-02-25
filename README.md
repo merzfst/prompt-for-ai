@@ -1,13 +1,15 @@
 # Prompt For AI
 
-Prompt For AI is an interactive CLI tool that scans a project folder, displays its file structure, and lets you select files to generate a prompt for further processing.
+Prompt For AI is an easy-to-use CLI tool that scans a project folder, shows its file structure, and helps you pick files to create a prompt.
 
 ## Features
 
-- **Interactive Folder Navigation** – Easily select the project folder using a user-friendly command-line interface.
-- **File Structure Display** – Generates and displays the project file structure as a tree.
-- **Selective File Inclusion** – Choose which files to include in the generated prompt.
-- **Configuration Saving** – Remembers your last used folder and file selection for quick reuse.
+- Navigate and choose a project folder
+- See the file structure as a tree
+- Pick files for the prompt with checkboxes
+- Save settings for next time
+- Works in English and Russian
+- Skips folders like node_modules
 
 ## Installation
 
@@ -19,8 +21,32 @@ npm install -g prompt-for-ai
 
 ## Usage
 
-Simply run the command:
+Start it with:
 
 ```bash
 create-prompt
 ```
+
+What to do:
+
+- Pick a language (English or Russian) on first run.
+- Select your project folder.
+- Look at the file tree.
+- Check the files you want in the prompt.
+- See the prompt in the console and find it saved as prompt.txt.
+
+You can reuse your last folder and files if you’ve run it before.
+
+## Configuration
+
+Settings are saved in project_prompt_config.json. It keeps:
+
+- Your last project folder
+- Files you picked
+- Language choice
+
+The tool loads this automatically next time.
+
+## License
+
+This project uses the ISC License.
