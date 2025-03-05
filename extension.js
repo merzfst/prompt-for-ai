@@ -176,11 +176,21 @@ async function createPrompt() {
     console.log(`\n${messages[lang].projectStructure}\n${treeToString(tree)}`);
     selectedFiles = await checkbox({
       message: messages[lang].selectFiles,
-      choices: allFiles.map((file) => ({
-        name: path.relative(projectRoot, file),
-        value: file,
-      })),
+      choices: [
+        { name: messages[lang].selectAllFiles, value: "ALL" },
+        ...allFiles.map((file) => ({
+          name: path.relative(projectRoot, file),
+          value: file,
+        })),
+      ],
     });
+    if (selectedFiles.includes("ALL")) {
+      selectedFiles = allFiles.filter(
+        (file) =>
+          path.basename(file) !== "package-lock.json" ||
+          path.basename(file) !== ".env"
+      );
+    }
     config.lastFiles = selectedFiles;
     saveConfig(config);
   }

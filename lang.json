@@ -19,7 +19,8 @@
     "selectLanguage": "Выберите язык / Select language:",
     "usePreviousSelection": "Использовать предыдущий выбор файлов?",
     "yes": "Да",
-    "no": "Нет, выбрать другую директорию"
+    "no": "Нет, выбрать другую директорию",
+    "selectAllFiles": "Выбрать все файлы"
   },
   "en": {
     "configLoadError": "Error loading configuration:",
@@ -41,6 +42,7 @@
     "selectLanguage": "Выберите язык / Select language:",
     "usePreviousSelection": "Use previous file selection?",
     "yes": "Yes",
-    "no": "No, choose new folder"
+    "no": "No, choose new folder",
+    "selectAllFiles": "Select all files"
   }
 }
