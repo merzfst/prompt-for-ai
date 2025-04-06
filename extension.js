@@ -185,12 +185,15 @@ async function createPrompt() {
       ],
     });
     if (selectedFiles.includes("ALL")) {
-      selectedFiles = allFiles.filter(
+      const allActualFiles = allFiles.filter((f) => f !== "ALL");
+
+      selectedFiles = allActualFiles.filter(
         (file) =>
-          path.basename(file) !== "package-lock.json" ||
+          path.basename(file) !== "package-lock.json" &&
           path.basename(file) !== ".env"
       );
     }
+
     config.lastFiles = selectedFiles;
     saveConfig(config);
   }
