@@ -1,19 +1,23 @@
 # Prompt For AI
 
-Prompt For AI is an easy-to-use CLI tool that scans a project folder, shows its file structure, and helps you pick files to create a prompt.
+Prompt For AI is an interactive CLI tool that scans your project folder, displays its file structure, and lets you pick files to generate a ready-to-use prompt for AI models.
 
 ## Features
 
-- Navigate and choose a project folder
-- See the file structure as a tree
-- Pick files for the prompt with checkboxes
-- Save settings for next time
-- Works in English and Russian
-- Skips folders like node_modules
+- 🗂️ **Browse & Select**: Navigate your project folders and pick specific files or entire directories.
+- 🌳 **Tree View**: Automatically generates a clean project tree structure.
+- ⚡ **Repeat Last Run**: Instantly re-generate prompts using your last configuration.
+- 🔄 **Back Navigation**: Go back to any step (folder selection, file selection, project choice) without restarting.
+- ⚙️ **Settings Menu**: Configure language, export format, token limits, global exclusions, and more.
+- 📄 **Multiple Formats**: Export as Plain Text (`.txt`) or Compressed PDF (`.pdf`).
+- 📊 **Token Estimation**: See estimated token counts in real-time while selecting files.
+- 🌍 **Multilingual**: Supports English and Russian interfaces.
+- 🛡️ **Smart Exclusions**: Automatically skips `node_modules`, `.git`, `dist`, and other common ignored folders.
+- 📋 **Clipboard Copy**: Automatically copies the generated text prompt to your clipboard.
 
 ## Installation
 
-Install Prompt For AI globally using npm:
+Install globally via npm:
 
 ```bash
 npm install -g prompt-for-ai
@@ -21,32 +25,35 @@ npm install -g prompt-for-ai
 
 ## Usage
 
-Start it with:
+Run the command:
 
 ```bash
 create-prompt
 ```
 
-What to do:
+### Workflow
 
-- Pick a language (English or Russian) on first run.
-- Select your project folder.
-- Look at the file tree.
-- Check the files you want in the prompt.
-- See the prompt in the console and find it saved as prompt.txt.
+1. **Select Language** (on first run): Choose between English and Russian.
+2. **Select Project**: Pick from favorites, recent projects, browse for a folder, or enter a path manually.
+3. **Folder Analysis**: Review folder sizes and choose which ones to include (or use `y/n` to include all).
+4. **File Selection**: Toggle individual files, entire folders, or use quick actions ("Select all", "Only code").
+5. **Export**: Choose format (`.txt` or `.pdf`).
+6. **Done**: The prompt is saved to your project root (and copied to clipboard if `.txt`).
 
-You can reuse your last folder and files if you’ve run it before.
+### Navigation
+
+- Use `↩️ Back` at any step to return to the previous screen.
+- Use `🚪 Exit` in the main menu to quit.
+- Press `Ctrl+C` at any time to immediately exit.
 
 ## Configuration
 
-Settings are saved in project_prompt_config.json. It keeps:
+Global settings (language, favorites, token limits, exclusions) are stored securely in your system's app data directory using [`conf`](https://github.com/sindresorhus/conf).
 
-- Your last project folder
-- Files you picked
-- Language choice
+Per-project settings (last selected files, excluded folders) are also saved globally, so your projects stay clean.
 
-The tool loads this automatically next time.
+The tool will automatically update your project's `.gitignore` to exclude generated `prompt.txt` and `prompt.pdf` files.
 
 ## License
 
-This project uses the ISC License.
+This project uses the [ISC License](LICENSE).
