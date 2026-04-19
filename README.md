@@ -1,5 +1,9 @@
 # Prompt For AI
 
+[![npm version](https://img.shields.io/npm/v/prompt-for-ai.svg)](https://www.npmjs.com/package/prompt-for-ai)
+[![npm downloads](https://img.shields.io/npm/dm/prompt-for-ai.svg)](https://www.npmjs.com/package/prompt-for-ai)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 Prompt For AI is an interactive CLI tool that scans your project folder, displays its file structure, and lets you pick files to generate a ready-to-use prompt for AI models.
 
 ## Features
