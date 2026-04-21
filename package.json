@@ -1,6 +1,6 @@
 {
   "name": "prompt-for-ai",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Interactive CLI prompt generator for AI — scans project structure and file contents.",
   "main": "src/index.js",
   "bin": {
