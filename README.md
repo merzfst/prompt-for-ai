@@ -27,6 +27,8 @@ Install globally via npm:
 npm install -g prompt-for-ai
 ```
 
+![Installation](https://github.com/merzfst/prompt-for-ai/raw/main/assets/installation.gif)
+
 ## Usage
 
 Run the command:
@@ -44,11 +46,15 @@ create-prompt
 5. **Export**: Choose format (`.txt` or `.pdf`).
 6. **Done**: The prompt is saved to your project root (and copied to clipboard if `.txt`).
 
+![Main workflow](https://github.com/merzfst/prompt-for-ai/raw/main/assets/main.gif)
+
 ### Navigation
 
 - Use `↩️ Back` at any step to return to the previous screen.
 - Use `🚪 Exit` in the main menu to quit.
 - Press `Ctrl+C` at any time to immediately exit.
+
+![Repeat last run](https://github.com/merzfst/prompt-for-ai/raw/main/assets/repeat.gif)
 
 ## Configuration
 
@@ -57,6 +63,8 @@ Global settings (language, favorites, token limits, exclusions) are stored secur
 Per-project settings (last selected files, excluded folders) are also saved globally, so your projects stay clean.
 
 The tool will automatically update your project's `.gitignore` to exclude generated `prompt.txt` and `prompt.pdf` files.
+
+![Settings](https://github.com/merzfst/prompt-for-ai/raw/main/assets/settings.gif)
 
 ## License
 
